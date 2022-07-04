@@ -139,7 +139,7 @@ const App = () => {
 
                     <div className="mt-5">
                       <p className="text-gray-400 text-sm">WIN PERCENTAGE</p>
-                      <ProgressBar percentage='54' />
+                      <ProgressBar homeTeam={ match.homeTeamName } awayTeam={ match.awayTeamName } percentage={ match?.teamsWinProbability?.homeTeamPercentage ? match?.teamsWinProbability?.homeTeamPercentage : '50' } />
                     </div>
                   </div>
                 ) ) }
